@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FFC107</color>
+
+
+    <color name="bs_white">#FFFFFF</color>
+    <color name="bs_white_light_transparent">#BBFFFFFF</color>
+    <color name="bs_white_transparent">#99FFFFFF</color>
+    <color name="bs_white_strong_transparent">#33FFFFFF</color>
+    <color name="bs_black">#000000</color>
+    <color name="bs_light_grey">#E6E6E6</color>
+    <color name="bs_dark_grey">#555555</color>
+
+    <color name="bs_transparent">#00000000</color>
+    <color name="bs_black_alpha">#99000000</color>
+    <color name="bs_black_strong_alpha">#99000000</color>
+    <color name="bs_dark_grey_alpha">#DD0A0A0A</color>
+    <color name="bs_background_center_alpha">#DD27454D</color>
+    <color name="bs_dark_grey_solid">#0A0A0A</color>
+    <color name="bs_background_center_solid">#27454D</color>
+    <color name="bs_text_shadow">#C01A171B</color>
+    <color name="background_holo_dark">#ff000000</color>
+
+    <!-- GREEN -->
+    <color name="bs_green">#4CAF50</color>
+    <color name="bs_green_alpha">#444CAF50</color>
+    <color name="bs_green_dark">#388E3C</color>
+
+    <!-- BLUE -->
+    <color name="bs_blue">#2196F3</color>
+    <color name="bs_blue_dark">#1976D2</color>
+    <color name="bs_blue_alpha">#DD2196F3</color>
+    <color name="bs_blue_strong_alpha">#662196F3</color>
+
+    <!-- RED -->
+    <color name="bs_red">#F44336</color>
+    <color name="bs_red_alpha">#44F44336</color>
+    <color name="bs_red_dark">#D32F2F</color>
+
+    <!-- ORANGE -->
+    <color name="bs_orange">#FF5722</color>
+    <color name="bs_orange_alpha">#44FF5722</color>
+    <color name="bs_orange_dark">#F57C00</color>
+
+
+    <!--LIGHT GREEN-->
+    <color name="bs_light_green">#8BC34A</color>
+    <color name="bs_light_green_alpha">#448BC34A</color>
+    <color name="bs_light_green_dark">#8BC34A</color>
+
+    <!-- LIGHT BLUE -->
+    <color name="bs_light_blue">#03A9F4</color>
+    <color name="bs_light_blue_alpha">#4403A9F4</color>
+    <color name="bs_light_blue_dark">#B3E5FC</color>
+
+
+    <!-- INDIGO -->
+    <color name="bs_indigo">#3F51B5</color>
+    <color name="bs_indigo_alpha">#443F51B5</color>
+    <color name="bs_indigo_dark">#303F9F</color>
+
+
+    <!-- YELLOW -->
+    <color name="bs_yellow">#FFEB3B</color>
+    <color name="bs_yellow_alpha">#44FFEB3B</color>
+    <color name="bs_yellow_dark">#FBC02D</color>
+
+    <!-- AMBER -->
+    <color name="bs_amber">#FFC107</color>
+    <color name="bs_amber_alpha">#44FFC107</color>
+    <color name="bs_amber_dark">#FFA000</color>
+
+
+    <!-- light blue 500 -->
+    <color name="bs_primary">#03A9F4</color>
+    <!-- light blue 700 -->
+    <color name="bs_primary_dark">#0288D1</color>
+    <!-- light blue 100 -->
+    <color name="bs_accent">#B3E5FC</color>
+
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MTC Sample</string>
+    <string name="dummy_text">dummy</string>
+    <string name="bt_label_connect">Connect</string>
+
+    <string name="bond_state_none">Not bonded</string>
+    <string name="bond_state_bonding">Bonding</string>
+    <string name="bond_state_bonded">Bonded</string>
+    <string name="bl_major_class_misc">Misc</string>
+    <string name="bl_major_class_computer">Computer</string>
+    <string name="bl_major_class_phone">Phone</string>
+    <string name="bl_major_class_networking">Networking</string>
+    <string name="bl_major_class_video">Video</string>
+    <string name="bl_major_class_peripheral">Peripheral</string>
+    <string name="bl_major_class_imaging">Imaging</string>
+    <string name="bl_major_class_wearable">Wearable</string>
+    <string name="bl_major_class_toy">Toy</string>
+    <string name="bl_major_class_health">Health</string>
+    <string name="bl_major_class_uncategorized">Uncategorized</string>
+    <string name="detail_fragment_status_label">Status:</string>
+    <string name="service_label">Services</string>
+    <string name="minor_class">Minor class: %1$s</string>
+    <string name="major_class">Major class: %1$s</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+
+</resources>

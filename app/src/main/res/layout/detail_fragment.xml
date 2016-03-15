@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/status_label"
+            style="@style/info_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/detail_fragment_status_label"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detail_fragment_status_value"
+            style="@style/info_text"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/status_label"
+            android:text="@string/dummy_text"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detail_fragment_bondend_value"
+            style="@style/info_text"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/status_label"
+            android:text="@string/bond_state_none"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/detail_fragment_device_name"
+        style="@style/info_text"
+        android:text="@string/dummy_text"/>
+
+
+    <TextView
+        android:id="@+id/detail_fragment_device_address"
+        style="@style/info_text"
+        android:text="@string/dummy_text"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/bs_dark_grey"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/detail_fragment_major_class"
+        style="@style/info_text"
+        android:text="@string/major_class"/>
+
+
+    <TextView
+        android:id="@+id/detail_fragment_minor_class"
+        style="@style/info_text"
+        android:text="@string/minor_class"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/bs_dark_grey"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/detail_fragment_service_label"
+        style="@style/info_text"
+        android:text="@string/service_label"/>
+
+
+    <TextView
+        android:id="@+id/detail_fragment_service_uuid"
+        style="@style/info_text"
+        android:text="@string/service_label"
+        android:textSize="16sp"/>
+
+</LinearLayout>

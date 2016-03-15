@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label_scan_test"
+        android:text="TEST SCAN"
+        style="@style/test_label"/>
+
+    <TextView
+        android:id="@+id/label_connect"
+        style="@style/test_label"
+        android:text="TEST CONNECT"/>
+
+    <TextView
+        android:id="@+id/label_disconnect"
+        style="@style/test_label"
+        android:text="TEST DISCONNECT"/>
+
+
+    <TextView
+        android:id="@+id/label_services"
+        style="@style/test_label"
+        android:text="TEST BLE SERVICES SCAN"/>
+
+    <TextView
+        android:id="@+id/label_reconnect"
+        style="@style/test_label"
+        android:text="TEST RECONNECT"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/label_found_device"
+        style="@style/test_label_info"
+        android:text="SCANNED DEVICE"/>
+
+    <TextView
+        android:id="@+id/label_selected_device"
+        style="@style/test_label_info"
+        android:text="CONNECTED DEVICE"/>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+    <TextView
+        android:id="@+id/overview_list_item_name"
+        style="@style/info_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/dummy_text"/>
+
+    <TextView
+        android:id="@+id/overview_list_item_address"
+        style="@style/info_text"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/overview_list_item_name"
+        android:text="@string/dummy_text"
+        android:textSize="@dimen/medium_text_size"/>
+
+    <Button
+        android:id="@+id/overview_list_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/overview_list_item_address"
+        android:layout_alignParentEnd="true"
+        android:text="@string/bt_label_connect"/>
+
+
+</RelativeLayout>

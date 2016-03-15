@@ -1,0 +1,19 @@
+<manifest package="de.binosys.android.bluetooth"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- for communication with band -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="de.binosys.android.architecture.dagger.DIApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <service android:name=".repo.BleService"/>
+
+    </application>
+
+</manifest>
