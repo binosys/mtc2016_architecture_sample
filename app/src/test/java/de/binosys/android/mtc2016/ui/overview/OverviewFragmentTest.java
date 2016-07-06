@@ -14,9 +14,6 @@ import java.util.List;
 
 import de.binosys.android.architecture.bus.BusRegisterer;
 import de.binosys.android.bluetooth.repo.BleDevice;
-import de.binosys.android.mtc2016.ui.overview.OverviewFragment;
-import de.binosys.android.mtc2016.ui.overview.OverviewListAdapter;
-import de.binosys.android.mtc2016.ui.overview.OverviewPresenter;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -92,6 +89,6 @@ public class OverviewFragmentTest {
         testee.onPause();
         // Assert
         verify(mockRegisterer).unregister(testee);
-        verify(mockPresenter).onPause();
+        verify(mockPresenter).onViewDetached();
     }
 }

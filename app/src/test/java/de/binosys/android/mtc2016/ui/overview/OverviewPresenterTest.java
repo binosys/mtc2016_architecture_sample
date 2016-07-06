@@ -70,7 +70,7 @@ public class OverviewPresenterTest {
 		List<BleDevice> devices = new ArrayList<>(0);
 		when(mockOverviewManager.getAllDevices()).thenReturn(devices);
 		// Act
-		testee.onResume();
+		testee.onViewAttached();
 		// Assert
 		verify(mockOverviewManager).startDeviceScan();
 		verify(mockView).setDeviceItems(devices);
@@ -79,7 +79,7 @@ public class OverviewPresenterTest {
 	@Test
 	public void testOnPause() throws Exception {
 		// Act
-		testee.onPause();
+		testee.onViewDetached();
 		// Assert
 		verify(mockOverviewManager).stopDeviceScan();
 	}

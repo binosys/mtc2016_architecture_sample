@@ -23,10 +23,10 @@ import de.binosys.android.bluetooth.repo.BleDevice;
 
 public class OverviewListAdapter extends ArrayAdapter<BleDevice> {
 
-    private final OverviewPresenter presenter;
+    private final IOverviewPresenter presenter;
 
     @Inject
-    public OverviewListAdapter(Context context, ArrayList<BleDevice> devices, OverviewPresenter presenter) {
+    public OverviewListAdapter(Context context, ArrayList<BleDevice> devices, IOverviewPresenter presenter) {
 
         super(context, 0, devices);
         this.presenter = presenter;

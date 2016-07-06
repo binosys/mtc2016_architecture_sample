@@ -24,9 +24,9 @@ import de.binosys.android.mtc2016.business.detail.DetailDTO;
 public class DetailFragment extends Fragment implements IDetailView {
 
     @Inject
-    DetailFragmentPresenter presenter;
+    IDetailPresenter presenter;
     @Inject
-    BusRegisterer busRegisterer;
+    BusRegisterer   busRegisterer;
     private View root;
 
     private TextView connectionState;
@@ -66,7 +66,7 @@ public class DetailFragment extends Fragment implements IDetailView {
 
         super.onResume();
         busRegisterer.register(this);
-        presenter.onResume();
+        presenter.onViewAttached();
     }
 
 
@@ -74,7 +74,7 @@ public class DetailFragment extends Fragment implements IDetailView {
     public void onPause() {
 
         super.onPause();
-        presenter.onPause();
+        presenter.onViewDetached();
         busRegisterer.unregister(this);
     }
 

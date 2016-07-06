@@ -7,32 +7,34 @@ package de.binosys.android.mtc2016.ui.detail;
 import com.squareup.otto.Subscribe;
 
 import javax.inject.Inject;
+import javax.inject.Singleton;
 
 import de.binosys.android.architecture.bus.BusObserver;
 import de.binosys.android.mtc2016.business.detail.DetailDTO;
 import de.binosys.android.mtc2016.business.detail.DetailManager;
 import de.binosys.android.mtc2016.business.detail.event.EventBusinessDetailDeviceConnected;
 
-
+@Singleton
 @BusObserver
-public class DetailFragmentPresenter {
+public class DetailPresenter implements IDetailPresenter {
 
     @Inject
     DetailManager manager;
 
     private IDetailView view;
 
+    @Override
     public void setView(IDetailView view) {
 
         this.view = view;
     }
 
-    public void onResume(){
+    public void onViewAttached(){
         manager.connectSelectedDevice();
         updateView();
     }
 
-    public void onPause(){
+    public void onViewDetached(){
         manager.disconnectSelectedDevice();
     }
 

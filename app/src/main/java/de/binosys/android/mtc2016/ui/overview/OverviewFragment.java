@@ -32,7 +32,7 @@ public class OverviewFragment extends Fragment implements IOverviewView {
     @Inject
     BusRegisterer registerer;
     @Inject
-    OverviewPresenter presenter;
+    IOverviewPresenter presenter;
     @Inject
     OverviewListAdapter listAdapter;
 
@@ -63,13 +63,13 @@ public class OverviewFragment extends Fragment implements IOverviewView {
 
         super.onResume();
         registerer.register(this);
-        presenter.onResume();
+        presenter.onViewAttached();
     }
 
     @Override
     public void onPause() {
 
-        presenter.onPause();
+        presenter.onViewDetached();
         registerer.unregister(this);
         super.onPause();
     }

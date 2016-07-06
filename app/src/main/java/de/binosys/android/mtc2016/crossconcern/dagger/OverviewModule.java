@@ -8,11 +8,12 @@ import java.util.ArrayList;
 
 import dagger.Module;
 import dagger.Provides;
+import de.binosys.android.bluetooth.repo.BleDevice;
+import de.binosys.android.mtc2016.ui.overview.IOverviewPresenter;
 import de.binosys.android.mtc2016.ui.overview.OverviewActivity;
 import de.binosys.android.mtc2016.ui.overview.OverviewFragment;
 import de.binosys.android.mtc2016.ui.overview.OverviewListAdapter;
 import de.binosys.android.mtc2016.ui.overview.OverviewPresenter;
-import de.binosys.android.bluetooth.repo.BleDevice;
 
 
 @Module(
@@ -33,8 +34,18 @@ public class OverviewModule {
     }
 
     @Provides
-    public OverviewListAdapter provideOverviewListAdapter(OverviewPresenter presenter) {
+    public OverviewListAdapter provideOverviewListAdapter(IOverviewPresenter presenter) {
 
         return new OverviewListAdapter(activity, new ArrayList<BleDevice>(), presenter);
     }
+
+
+
+    @Provides
+    public IOverviewPresenter provideIOverviewPresenter(OverviewPresenter presenter) {
+
+        return presenter;
+    }
+
+
 }
